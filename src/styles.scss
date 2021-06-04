@@ -1,0 +1,39 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import 'app/styles/button';
+@import 'app/styles/card';
+@import 'app/styles/forms';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import '~@fortawesome/fontawesome-free/css/all.min.css';
+
+*, *::after, *::before {
+ margin: 0;
+ box-sizing: border-box;
+}
+body {
+  font-family: 'Roboto';
+}
+
+
+#app {
+  background: #eeeeee50;
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-rows: auto 1fr;
+
+  .app-container {
+    padding: 1em;
+    height: 100%;
+  }
+}
+
+.titlePage {
+  text-transform:  uppercase;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.text-danger {
+  color: red;
+}

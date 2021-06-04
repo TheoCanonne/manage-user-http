@@ -1,0 +1,12 @@
+.form-user {
+  width:60%;
+  margin: auto;
+  margin-top: 2em;
+  transition: width 0.5s ease;
+}
+
+@media (max-width: 650px ) {
+  .form-user {
+    width:100%;
+  }
+}

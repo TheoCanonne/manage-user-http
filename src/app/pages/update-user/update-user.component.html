@@ -1,0 +1,4 @@
+<h2 class="titlePage">Ajout d'un utilisateur</h2>
+<div class="form-user">
+  <app-detail-user (userSubmitted)="updateUser($event)" [user]="user$ | async"></app-detail-user>
+</div>

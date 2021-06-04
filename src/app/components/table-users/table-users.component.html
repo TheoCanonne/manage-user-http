@@ -1,0 +1,25 @@
+<table>
+  <thead>
+    <th>Nom</th>
+    <th>Identifiant</th>
+    <th>Email</th>
+    <th>Numéro de téléphone</th>
+    <th>Modification</th>
+  </thead>
+  <tbody>
+    <tr *ngFor="let user of users">
+      <td>{{user.name}}</td>
+      <td>{{user.username}}</td>
+      <td>{{user.email}}</td>
+      <td>{{user.phone}}</td>
+      <td class="action-list">
+        <a [routerLink]="'/update-user/' + user.id" class="btn">
+          <i class="far fa-edit"></i>
+        </a>
+        <button (click)="deleteUser.emit(user)" class="btn">
+          <i class="fas fa-user-times"></i>
+        </button>
+      </td>
+    </tr>
+  </tbody>
+</table>
