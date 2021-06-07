@@ -4,7 +4,7 @@
     <input type="text" name="name" formControlName="name" autocomplete="off" />
     <span *ngIf="userForm.controls.name.touched && userForm.controls.name.hasError('required')"
     class="text-danger">
-      Ce Champs est obligatoire
+      Ce champs est obligatoire
     </span>
   </div>
   <div class="form-group" [class.errored]="isErroredControl(userForm.controls.username)">
@@ -12,7 +12,7 @@
     <input type="text" name="username" formControlName="username" autocomplete="off"/>
     <span *ngIf="userForm.controls.username.touched && userForm.controls.username.hasError('required')"
     class="text-danger">
-      Ce Champs est obligatoire
+      Ce champs est obligatoire
     </span>
   </div>
   <div class="form-group" [class.errored]="isErroredControl(userForm.controls.email)">
@@ -20,11 +20,11 @@
     <input type="text" name="email" formControlName="email" autocomplete="off" />
     <span *ngIf="userForm.controls.email.touched && userForm.controls.email.hasError('email')"
     class="text-danger">
-      Le format d'email est incorrecte
+      Le format d'email est incorrect
     </span>
     <span *ngIf="userForm.controls.email.touched && userForm.controls.email.hasError('required')"
     class="text-danger">
-      Ce Champs est obligatoire
+      Ce champs est obligatoire
     </span>
   </div>
   <div class="form-group" [class.errored]="isErroredControl(userForm.controls.phone)">
@@ -32,7 +32,7 @@
     <input type="text" name="phone" formControlName="phone" autocomplete="off" />
     <span *ngIf="userForm.controls.phone.touched && userForm.controls.phone.hasError('required')"
     class="text-danger">
-      Ce Champs est obligatoire
+      Ce champs est obligatoire
     </span>
   </div>
 
